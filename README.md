@@ -9,3 +9,6 @@ Ossian Fredblad
 Rubin Barcley
 <br/>
 Rimon Hanna
+
+ <br/><br/><br/>
+ https://discord.gg/9mFPXW
