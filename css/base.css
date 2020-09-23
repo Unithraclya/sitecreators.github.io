@@ -1,5 +1,10 @@
 @import "variables.css";
 
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
 /* Header Section */
 header {
   display: grid;
@@ -12,7 +17,6 @@ header {
   display: flex;
   border: 1px solid black;
   margin: 20px;
-
 }
 
 #navBar {
@@ -21,7 +25,6 @@ header {
   justify-content: center;
   align-items: center;
   margin-right: 40px;
-  
 }
 
 .homeLink,
@@ -40,7 +43,7 @@ header {
 
 /* Footer Section */
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -74,4 +77,3 @@ footer {
 .copyright {
   padding: 20px;
 }
-

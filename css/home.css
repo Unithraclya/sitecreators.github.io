@@ -1,3 +1,4 @@
+/* --- Intro --- */
 .intro {
   background-image: url(../img/workplace.jpg);
   background-size: cover;
@@ -50,3 +51,5 @@
   border-radius: 80px;
   background-color: yellowgreen;
 }
+
+/* --- About --- */
