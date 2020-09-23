@@ -1,36 +1,132 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/base.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/support.css'>
-    <script src='main.js'></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/support.css"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
     <header>
-        <h1 class="logga">Sitecreators</h1>
-        <nav id="navBar">
-            <a href="index.html" class="homeLink link">Home</a>
-            <a href="portfolio.html" class="designLink link">Design</a>
-            <a href="support.html" class="supportLink link">Support</a>
-        </nav>
+      <h1 class="logga">Sitecreators</h1>
+      <nav id="navBar">
+        <a href="index.html" class="homeLink link">Home</a>
+        <a href="portfolio.html" class="designLink link">Design</a>
+        <a href="support.html" class="supportLink link">Support</a>
+      </nav>
     </header>
     <main>
+      <div class="grid-container">
+        <div class="about-box">
+          <h2>Get to know the employees of Sitecreators</h2>
+          <ul>
+            <li>Ossian is a man who loves to....</li>
+            <li>Rubin truly enjoys...</li>
+            <li>Rimon likes to....</li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae, quasi.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              repellendus!
+            </li>
+          </ul>
+        </div>
+        <div class="faq-box">
+          <h2>Frequently asked questions.</h2>
+          <ul>
+            <li>
+              How long takes it take to make a fully up and running website?
+            </li>
+            <li>How does servicing the website work after initial setup?</li>
+            <li>Pricing and plans.</li>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+              blanditiis.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, eum.
+            </li>
+          </ul>
+        </div>
+        <div class="contact-box">
+          <h2>Contact us.</h2>
+          <ul>
+            <li>myemail@blabla.com</li>
+            <br />
+            <li>myemail@blabla.com</li>
+            <br />
+            <li>myemail@blabla.com</li>
+            <br />
+          </ul>
 
+          <form class="form-box">
+            <div>
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="John"
+                required
+              />
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Smith"
+                required
+              />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="your email"
+                />
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+              
+            
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="mediaLogs">
-            <a href="" class="mediaLink">Medialink</a>
-            <a href="" class="mediaLink">Medialink</a>
-            <a href="" class="mediaLink">Medialink</a>
-        </div>
-        <p class="copyright">&copy; Copyright</p>
-
+      <div class="social">
+        <a href="" class="social-icon-link">
+          <svg class="social-icon icon-facebook-with-circle">
+            <use xlink:href="img/sprites.svg#icon-facebook-with-circle"></use>
+          </svg>
+        </a>
+        <a href="" class="social-icon-link">
+          <svg class="social-icon icon-facebook-with-circle">
+            <use xlink:href="img/sprites.svg#icon-instagram-with-circle"></use>
+          </svg>
+        </a>
+        <a href="" class="social-icon-link">
+          <svg class="social-icon icon-facebook-with-circle">
+            <use xlink:href="img/sprites.svg#icon-twitter-with-circle"></use>
+          </svg>
+        </a>
+      </div>
+      <span class="copyright">&copy; Sitecreators 2020</span>
     </footer>
-    
-</body>
+  </body>
 </html>

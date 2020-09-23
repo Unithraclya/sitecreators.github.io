@@ -1,0 +1,35 @@
+.grid-container {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
+  height: 78vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+.about-box {
+  border: 1px solid black;
+}
+.faq-box {
+  border: 1px solid black;
+}
+.contact-box {
+  border: 1px solid black;
+}
+
+.form-box {
+    padding: 20px;
+}
+
+
