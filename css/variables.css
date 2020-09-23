@@ -1,4 +1,5 @@
 /* Diverse variabler för ez ändringar*/
 :root {
-    
+    --primaryColor: rgb(48, 48, 138);
+    --primaryTextColorOnColoredBackground: white;
 }
