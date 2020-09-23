@@ -1,5 +1,9 @@
 @import "variables.css";
 
+body {
+  position: relative;
+  min-height: 100vh;
+}
 
 /* Reset */
 *,
@@ -24,7 +28,6 @@ header {
   color: var(--primaryTextColorOnColoredBackground);
   margin: 20px;
   text-shadow: 5px 5px 7px rgb(26, 24, 24)
-
 }
 
 #navBar {
@@ -33,7 +36,6 @@ header {
   justify-content: center;
   align-items: center;
   margin-right: 40px;
-  
 }
 
 .homeLink,
@@ -52,8 +54,10 @@ header {
 
 /* Footer Section */
 footer {
+
   background-color: var(--primaryColor);
-  position: fixed;
+  position: absolute;
+
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -87,4 +91,3 @@ footer {
 .copyright {
   padding: 20px;
 }
-
