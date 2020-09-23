@@ -1,15 +1,6 @@
 @import "variables.css";
 
-/* Reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Typography */
+/* Header Section */
 header {
   display: grid;
   grid-template-columns: 1fr 2fr 4fr 3fr;
@@ -19,8 +10,10 @@ header {
 
 .logga {
   display: flex;
+  color: rgb(8, 231, 247);
   border: 1px solid black;
   margin: 20px;
+  text-shadow: 2px 2px 2px rgb(56, 52, 52)
 
 }
 
