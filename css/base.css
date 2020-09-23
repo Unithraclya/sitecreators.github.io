@@ -1,5 +1,10 @@
 @import "variables.css";
 
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: var(--main-font);
+}
 
 /* Reset */
 *,
@@ -13,6 +18,7 @@
 /* Header Section */
 header {
   display: grid;
+  background-color: var(--primaryColor);
   grid-template-columns: 1fr 2fr 4fr 3fr;
   grid-template-rows: auto;
   border: 1px solid black;
@@ -20,11 +26,9 @@ header {
 
 .logga {
   display: flex;
-  color: rgb(8, 231, 247);
-  border: 1px solid black;
+  color: var(--primaryTextColorOnColoredBackground);
   margin: 20px;
-  text-shadow: 2px 2px 2px rgb(56, 52, 52)
-
+  text-shadow: 5px 5px 7px rgb(26, 24, 24);
 }
 
 #navBar {
@@ -33,16 +37,14 @@ header {
   justify-content: center;
   align-items: center;
   margin-right: 40px;
-  
 }
 
 .homeLink,
 .designLink,
 .supportLink {
-  color: rgb(43, 43, 88);
+  color: var(--primaryTextColorOnColoredBackground);
   text-decoration: none;
   font-size: 25px;
-  border: 1px solid black;
   margin: 10px;
 }
 
@@ -52,7 +54,9 @@ header {
 
 /* Footer Section */
 footer {
-  position: fixed;
+  background-color: var(--primaryColor);
+  position: absolute;
+
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -86,4 +90,3 @@ footer {
 .copyright {
   padding: 20px;
 }
-
