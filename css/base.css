@@ -1,5 +1,6 @@
 @import "variables.css";
 
+
 /* Reset */
 *,
 *::before,
@@ -48,3 +49,41 @@ header {
 .link:hover {
   opacity: 0.6;
 }
+
+/* Footer Section */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+
+  border: 1px solid black;
+}
+
+.social {
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icon-link {
+  text-decoration: none;
+  color: black;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.copyright {
+  padding: 20px;
+}
+

@@ -1,0 +1,52 @@
+.intro {
+  background-image: url(../img/workplace.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 20vh minmax(min-content, 40vh) 20vh;
+}
+
+.intro-content {
+  grid-row: 2 / 3;
+  grid-column: 2 / span 3;
+  text-align: center;
+  background-color: orangered;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro-text {
+  color: #fff;
+  font-size: 24px;
+  line-height: 64px;
+}
+
+.cta {
+  width: 100%;
+}
+
+.cta label {
+  color: #fff;
+}
+
+.cta input {
+  border: none;
+  width: 60%;
+  margin: 10px auto;
+  padding: 8px;
+  border-radius: 4px;
+  display: block;
+}
+
+.btn {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 80px;
+  background-color: yellowgreen;
+}
