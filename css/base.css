@@ -3,6 +3,7 @@
 body {
   position: relative;
   min-height: 100vh;
+  font-family: var(--main-font);
 }
 
 /* Reset */
@@ -27,7 +28,7 @@ header {
   display: flex;
   color: var(--primaryTextColorOnColoredBackground);
   margin: 20px;
-  text-shadow: 5px 5px 7px rgb(26, 24, 24)
+  text-shadow: 5px 5px 7px rgb(26, 24, 24);
 }
 
 #navBar {
@@ -49,12 +50,10 @@ header {
 
 .link:hover {
   opacity: 0.6;
-
 }
 
 /* Footer Section */
 footer {
-
   background-color: var(--primaryColor);
   position: absolute;
 
