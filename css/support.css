@@ -1,35 +1,75 @@
 .grid-container {
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 10px;
-  height: 78vh;
+  height: 80vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3em;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 20px;
+  justify-content: space-evenly;
+  padding: 20px;
+  grid-gap: 20px;
+  grid-template-areas: "faq-box contact-box about-box form-box";
+  
 }
 
 ul {
-    margin-top: 20px;
-    margin-left: 100px;
-  }
+  list-style: none;
+  color: white;
+  margin-left: 50px;
+}
 
-.about-box {
-  border: 1px solid black;
+h2 {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.image {
+  height: 300px;
+  width: 400px;
 }
 .faq-box {
+  background-color: blue;
+  grid-area: faq-box;
+  list-style: none;
   border: 1px solid black;
+  padding: 10px;
+}
+
+.contact-box > ul {
+  display: list-item;
 }
 .contact-box {
-  border: 1px solid black;
+  background-color: green;
+  grid-area: contact-box;
 }
-
+.about-box {
+  background-color: purple;
+  grid-area: about-box;
+}
 .form-box {
-    padding: 20px;
+  background-color: pink;
+  grid-area: form-box;
+  margin-top: 40px;
+  /* display: flex; */
+  padding: 100px;
+  justify-content: space-evenly;
+  
+}
+/* grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 20vh minmax(min-content, 40vh) 20vh;
+  grid-gap: 20px; */
+
+/* .about-box {
+  grid-row: 1 / 4;
+  grid-column: 3 / span 3;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
-
+.faq-box {
+  grid-row: 1 / 4;
+  grid-column: 5 / span 3;
+} */
