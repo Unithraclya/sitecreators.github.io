@@ -7,19 +7,44 @@
 
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 20vh minmax(min-content, 40vh) 20vh;
+  grid-template-rows: 1fr minmax(min-content, 40vh) 1fr;
 }
 
 .intro-content {
   grid-row: 2 / 3;
   grid-column: 2 / span 3;
   text-align: center;
+  padding: 20px;
   background-color: orangered;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro-content {
+    grid-column: 2 / span 4;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .intro-content {
+    grid-column: 2 / span 5;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .intro-content {
+    grid-column: 3 / span 6;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .intro-content {
+    grid-column: 2 / span 8;
+  }
 }
 
 .intro-text {
@@ -30,25 +55,9 @@
 
 .cta {
   width: 100%;
-}
-
-.cta label {
+  padding: 14px 28px;
+  text-decoration: none;
   color: #fff;
-}
-
-.cta input {
-  border: none;
-  width: 60%;
-  margin: 10px auto;
-  padding: 8px;
-  border-radius: 4px;
-  display: block;
-}
-
-.btn {
-  padding: 16px 32px;
-  border: none;
-  border-radius: 80px;
   background-color: yellowgreen;
 }
 
@@ -78,8 +87,10 @@
   grid-row: 2 / 3;
   grid-column: 6 / 9;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
-  text-align: center;
   background-color: #fff;
 }
 
@@ -92,6 +103,7 @@
   grid-column: 6 / 12;
 
   width: 115%;
+  padding: 12px;
   background-color: #fff;
 }
 
