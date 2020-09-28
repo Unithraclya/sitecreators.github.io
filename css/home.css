@@ -15,7 +15,7 @@
   grid-column: 2 / span 3;
   text-align: center;
   padding: 20px;
-  background-color: orangered;
+  background-color: #fff;
 
   display: flex;
   flex-direction: column;
@@ -48,8 +48,8 @@
 }
 
 .intro-text {
-  color: #fff;
-  font-size: 24px;
+  color: #444;
+  font-size: 26px;
   line-height: 64px;
 }
 
@@ -58,7 +58,7 @@
   padding: 14px 28px;
   text-decoration: none;
   color: #fff;
-  background-color: yellowgreen;
+  background-color: var(--primaryColor);
 }
 
 /* --- About --- */
@@ -137,7 +137,8 @@
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 80px;
-  background-color: yellowgreen;
+  color: #fff;
+  background-color: var(--primaryColor);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -344,7 +345,7 @@
 }
 
 .show-more {
-  color: orangered;
+  color: var(--primaryColor);
   margin-bottom: 20px;
   display: none;
 }
@@ -356,7 +357,7 @@
 
   text-decoration: none;
   font-size: 24px;
-  background-color: orangered;
+  background-image: linear-gradient(45deg, var(--primaryColor), var(--primaryColorLight));
   color: #fff;
   padding: 2px 6px;
   margin: 8px;

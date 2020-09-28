@@ -1,6 +1,7 @@
 /* Diverse variabler för ez ändringar*/
 :root {
-  --primaryColor: rgb(48, 48, 138);
+  --primaryColor: #0061ff; /* #1da1f2 */
+  --primaryColorLight: #71c9f8;
   --primaryTextColorOnColoredBackground: white;
 
   --main-font: "Lato", sans-serif;
