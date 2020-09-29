@@ -1,8 +1,10 @@
-@import "variables.css";
+/* Diverse variabler för ez ändringar*/
+:root {
+  --primaryColor: #0061ff; /* #1da1f2 */
+  --primaryColorLight: #71c9f8;
+  --primaryTextColorOnColoredBackground: white;
 
-body {
-  font-family: var(--main-font);
-  line-height: 1.4;
+  --main-font: "Lato", sans-serif;
 }
 
 /* Reset */
@@ -14,10 +16,12 @@ body {
   box-sizing: border-box;
 }
 
-/* Utilities ------------------------ Make section or separate file for utlities */
-.primary-text {
-  color: var(--primaryColorLight);
+body {
+  font-family: var(--main-font);
+  line-height: 1.4;
 }
+
+/* ---- Grund template för alla sidor ---- */
 
 /* Header Section */
 header {
@@ -34,6 +38,10 @@ header {
   color: var(--primaryTextColorOnColoredBackground);
   margin: 20px;
   margin-right: 10px;
+}
+
+.primary-text {
+  color: var(--primaryColorLight);
 }
 
 #navBar {
@@ -53,6 +61,10 @@ header {
 }
 
 @media only screen and (max-width: 500px) {
+  .logga {
+    font-size: 24px;
+  }
+
   .homeLink,
   .designLink,
   .supportLink {
