@@ -33,7 +33,7 @@ header {
   align-items: center;
   color: var(--primaryTextColorOnColoredBackground);
   margin: 20px;
-  /* text-shadow: 5px 5px 7px rgb(26, 24, 24); */
+  margin-right: 10px;
 }
 
 #navBar {
@@ -41,7 +41,6 @@ header {
   grid-column: 3 /4;
   justify-content: space-around;
   align-items: center;
-  margin-right: 40px;
 }
 
 .homeLink,
@@ -50,6 +49,15 @@ header {
   color: var(--primaryTextColorOnColoredBackground);
   text-decoration: none;
   font-size: 25px;
+  margin: 6px;
+}
+
+@media only screen and (max-width: 500px) {
+  .homeLink,
+  .designLink,
+  .supportLink {
+    font-size: 20px;
+  }
 }
 
 .link:hover {
