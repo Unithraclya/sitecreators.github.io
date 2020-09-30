@@ -1,0 +1,62 @@
+.intro {
+  background-image: url(../../img/workplace.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr minmax(min-content, 40vh) 1fr;
+}
+
+.intro-content {
+  grid-row: 2 / 3;
+  grid-column: 2 / span 3;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro-content {
+    grid-column: 2 / span 4;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .intro-content {
+    grid-column: 2 / span 5;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .intro-content {
+    grid-column: 3 / span 6;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .intro-content {
+    grid-column: 2 / span 8;
+  }
+}
+
+.intro-text {
+  color: #333;
+  font-size: 26px;
+  line-height: 64px;
+}
+
+.cta {
+  width: 90%;
+  font-size: 1.2em;
+  padding: 14px 28px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primaryColor);
+}
